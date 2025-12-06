@@ -16,3 +16,9 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         }
     }
 });
+
+chrome.commands.onCommand.addListener((command, tab) => {
+    if (command === "toggle-highlight" && tab.id) {
+        chrome.tabs.sendMessage(tab.id, { action: "highlight" });
+    }
+});

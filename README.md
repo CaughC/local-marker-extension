@@ -26,10 +26,12 @@ The "Local Marker" extension allows you to highlight text on web pages and local
 - Select the text you want to highlight.
 - **Option A**: Right-click and select **"Highlight Selection"**.
 - **Option B**: Click the extension icon in the toolbar and click **"Highlight Selection"**.
+- **Option C**: Press `Ctrl + Shift + H` (or `Command + Shift + H` on Mac).
 - The text will turn **yellow**.
 
 ### 2. Remove Highlight
-- **Double-click** on any highlighted text to remove the highlight.
+- **Method A**: Double-click on any highlighted text.
+- **Method B**: Click inside the highlighted text (or select it) and press `Ctrl + Shift + H`.
 
 ### 3. Save Changes
 - Click the extension icon to open the popup.
