@@ -1,30 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {
-        width: 200px;
-        padding: 10px;
-        font-family: sans-serif;
-      }
-      button {
-        width: 100%;
-        padding: 8px;
-        cursor: pointer;
-        background-color: #fce883;
-        border: 1px solid #e0c850;
-        border-radius: 4px;
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
-      button:hover {
-        background-color: #fbdc40;
-      }
-    </style>
-  </head>
-  <body>
+
+<head>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: sans-serif;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      cursor: pointer;
+      background-color: #fce883;
+      border: 1px solid #e0c850;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    button:hover {
+      background-color: #fbdc40;
+    }
+
+    button.secondary {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+    }
+
+    button.secondary:hover {
+      background-color: #e0e0e0;
+    }
+
+    #status {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+      min-height: 1.2em;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section">
+    <h3>AI Auto-Underline</h3>
+    <div id="apiKeySection">
+      <input type="password" id="apiKeyInput" placeholder="Enter Gemini API Key">
+      <input type="text" id="modelNameInput" placeholder="Model Name (e.g. gemini-1.5-flash)"
+        value="gemini-1.5-flash-latest">
+      <button id="saveKeyBtn" class="secondary">Save Settings</button>
+    </div>
+
+    <div id="aiActionSection" class="hidden">
+      <input type="text" id="aiPromptInput" placeholder="e.g. Highlight proper nouns">
+      <button id="aiRunBtn">AI Auto Underline</button>
+      <button id="changeKeyBtn" class="secondary" style="font-size: 10px; padding: 4px;">Change Settings</button>
+    </div>
+    <div id="status"></div>
+  </div>
+
+  <div class="section">
+    <h3>Manual Tools</h3>
     <button id="highlightBtn">Highlight Selection</button>
     <button id="saveBtn">Save Page</button>
-    <script src="popup.js"></script>
-  </body>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
 </html>

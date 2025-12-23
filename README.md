@@ -33,7 +33,14 @@ The "Local Marker" extension allows you to highlight text on web pages and local
 - **Method A**: Double-click on any highlighted text.
 - **Method B**: Click inside the highlighted text (or select it) and press `Ctrl + Shift + H`.
 
-### 3. Save Changes
+### 3. AI Auto-Underline (NEW)
+1. Click the extension icon to open the popup.
+2. Enter your **Gemini API Key** and click "Save Key" (saved locally).
+3. Enter an instruction in the prompt box (e.g., "Underline dates and deadlines").
+4. Click **"✨ Auto Underline"**.
+5. Wait for the AI to analyze the page. Important parts will be underlined in **light blue**.
+
+### 4. Save Changes
 - Click the extension icon to open the popup.
 - Click **"Save Page"**.
 - A new HTML file (e.g., `page_title.html`) will be downloaded.
